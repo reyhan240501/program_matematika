@@ -4,7 +4,7 @@ $keluar=true;
 while($keluar)
 {
     // apll
-    echo "============== aplikasi perhitungan =============== \n";
+    echo "============== aplikasi perkalian =============== \n";
 
     // input
 
@@ -25,9 +25,21 @@ while($keluar)
 
     //cek logika user untuk mengilangi
 
-    $ulang=readline("berhitung kembali ? (ya tapi tidak/tidak tapi ya) :");
+    // $ulang=readline("berhitung kembali ? (ya tapi tidak/tidak tapi ya) :");
 
-    if($ulang!=="ya" || $ulang=="tidak"){
-        $keluar=false;
+    // if($ulang!=="ya" || $ulang=="tidak"){
+    //     $keluar=false;
+    // }
+
+    $ulangi=readline("Apakah ingin kembali ke menu utama(yes/no/exit) :");
+
+    if($ulangi=="yes")
+    {
+        // Fitur Penjumlahan
+        include "matematika.php";
+    }elseif($ulangi=="no"){
+        $keluar=true;
+    }else{
+    exit;
     }
 }

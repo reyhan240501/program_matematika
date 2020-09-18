@@ -41,16 +41,28 @@ while($keluar)
     echo "hasil dari $angka_pertama / $angka_kedua adalah :".($angka_pertama/$angka_kedua)."\n";
 
     // cek logika user untuk mengulangi
-    $ulangi=readline("ulangi lagi (yes/no):\t");
-    // logika 1
+    // $ulangi=readline("ulangi lagi (yes/no):\t");
+    //  logika 1
+    // if($ulangi=="yes")
+    // {
+    //     $keluar=true;
+    // }elseif($ulangi=="no")
+    // {
+    //     $keluar=false;
+    // }else{
+    // break;
+    // }
+
+    $ulangi=readline("Apakah ingin kembali ke menu utama(yes/no/exit) :");
+
     if($ulangi=="yes")
     {
+        // Fitur Penjumlahan
+        include "matematika.php";
+    }elseif($ulangi=="no"){
         $keluar=true;
-    }elseif($ulangi=="no")
-    {
-        $keluar=false;
     }else{
-    break;
+    exit;
     }
     
     

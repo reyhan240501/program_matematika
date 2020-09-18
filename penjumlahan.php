@@ -25,9 +25,21 @@ while($keluar)
 
      //cek logika user untuk menglangi
 
-    $ulangi=readline("ulangi lagi (yes/no) :");
+    // $ulangi=readline("ulangi lagi (yes/no) :");
 
-    if($ulangi!=="yes" || $ulangi=="no"){
-        $keluar=false;
+    // if($ulangi!=="yes" || $ulangi=="no"){
+    //     $keluar=false;
+    // }
+    $ulangi=readline("Apakah ingin kembali ke menu utama(yes/no/exit) :");
+
+    if($ulangi=="yes")
+    {
+        // Fitur Penjumlahan
+        include "matematika.php";
+    }elseif($ulangi=="no"){
+        $keluar=true;
+    }else{
+    exit;
     }
+
 }
