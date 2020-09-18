@@ -31,7 +31,7 @@ while($keluar)
 
     // cara 2
     if(is_numeric($angka_pertama)==false || is_numeric($angka_kedua)==false){
-        echo "maaf kami tidak bisa menerima input berupa huruf!! \n";
+        echo "maaf kami tidak bisa menerima input berupa huruf! \n";
         continue;
     }
     
